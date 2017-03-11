@@ -5,7 +5,7 @@
 #include "AbstractStellarBody.h"
 
 AbstractStellarBody::AbstractStellarBody(const std::string &name, double mass, double radius,
-                                         const sf::Vector2f &position, const sf::Vector2f &velocity) : name(name),
+                                         const sf::Vector2<double> &position, const sf::Vector2<double> &velocity) : name(name),
                                                                                                        mass(mass),
                                                                                                        radius(radius),
                                                                                                        position(
@@ -25,18 +25,31 @@ double AbstractStellarBody::getRadius() const {
     return radius;
 }
 
-const sf::Vector2f &AbstractStellarBody::getPosition() const {
+const sf::Vector2<double> &AbstractStellarBody::getPosition() const {
     return position;
 }
 
-const sf::Vector2f &AbstractStellarBody::getVelocity() const {
+const sf::Vector2<double> &AbstractStellarBody::getVelocity() const {
     return velocity;
 }
 
-void AbstractStellarBody::setPosition(const sf::Vector2f &position) {
-    AbstractStellarBody::position = position;
+void AbstractStellarBody::setPosition(const sf::Vector2<double> &position) {
+    this->position = position;
 }
 
-void AbstractStellarBody::setVelocity(const sf::Vector2f &velocity) {
-    AbstractStellarBody::velocity = velocity;
+void AbstractStellarBody::setVelocity(const sf::Vector2<double> &velocity) {
+    this->velocity = velocity;
+}
+
+bool AbstractStellarBody::loadTexture(const sf::Texture &texture) {
+    sprite.setTexture(texture, true);
+    sprite.setOrigin(32/2, 32/2);
+}
+
+void AbstractStellarBody::setSpritePosition(sf::Vector2f position){
+    sprite.setPosition(position);
+}
+
+void AbstractStellarBody::draw(sf::RenderWindow &window) {
+    window.draw(sprite);
 }

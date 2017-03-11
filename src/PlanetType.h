@@ -9,6 +9,7 @@ enum PlanetType{
     EARTHLIKE,
     GAZ,
     ICE_WORLD,
+    ROCKY_WORLD,
     AMONIAC
 };
 

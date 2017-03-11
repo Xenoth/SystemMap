@@ -9,7 +9,6 @@ enum StarType{
     O,
     B,
     F,
-    G,
     M,
     NEUTRON
 };

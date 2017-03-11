@@ -12,8 +12,8 @@
 class Star : public AbstractStellarBody {
 
     public:
-    Star(const std::string &name, double mass, double radius, const sf::Vector2f &position,
-         const sf::Vector2f &velocity, const StarType &starType);
+    Star(const std::string &name, double mass, double radius, const sf::Vector2<double> &position,
+         const sf::Vector2<double> &velocity, const StarType &starType);
 
     private:
         StarType starType;

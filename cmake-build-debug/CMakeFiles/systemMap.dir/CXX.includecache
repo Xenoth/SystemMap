@@ -13,8 +13,14 @@ AbstractStellarBody.h
 /home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.h
 SFML/System.hpp
 -
+SFML/Graphics/Sprite.hpp
+-
+SFML/Graphics/RenderWindow.hpp
+-
 
 /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp
+iostream
+-
 Math4Orbits.h
 /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h
 
@@ -65,6 +71,8 @@ Star.h
 /home/xenoth/git/my_git/SystemMap/src/Star.h
 Planet.h
 /home/xenoth/git/my_git/SystemMap/src/Planet.h
+SFML/Graphics.hpp
+-
 
 /home/xenoth/git/my_git/SystemMap/src/main.cpp
 config.h

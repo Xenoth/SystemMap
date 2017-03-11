@@ -10,6 +10,7 @@
 #include "AbstractStellarBody.h"
 #include "Star.h"
 #include "Planet.h"
+#include <SFML/Graphics.hpp>
 
 class System {
 
@@ -20,9 +21,15 @@ class System {
 
         void update(double T);
 
+        bool initGraphical();
+        void draw(sf::RenderWindow &window);
+
+
     private :
         std::string name;
         Star main_body;
+
+        sf::Texture texture_star, texture_planet;
 
         std::vector<Planet> orbiting_planets;
 
