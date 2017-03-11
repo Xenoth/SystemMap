@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="systemMap"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="systemMap">
+				<Option output="/home/xenoth/git/my_git/SystemMap/cmake-build-debug/systemMap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 systemMap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="systemMap/fast">
+				<Option output="/home/xenoth/git/my_git/SystemMap/cmake-build-debug/systemMap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xenoth/git/my_git/SystemMap/cmake-build-debug"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 systemMap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/xenoth/git/my_git/SystemMap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Planet.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Planet.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/PlanetType.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Star.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Star.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StarType.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/System.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/System.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/main.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/config.h.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/cmake_modules/FindSFML.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -23,7 +23,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 # Define sources and executable
 set(EXECUTABLE_NAME "systemMap")
 file (GLOB_RECURSE sourceFiles src/*)
-add_executable(${EXECUTABLE_NAME} ${sourceFiles})
+add_executable(${EXECUTABLE_NAME} ${sourceFiles} src/System.cpp src/System.h src/AbstractStellarBody.cpp src/AbstractStellarBody.h src/Star.cpp src/Star.h src/StarType.h src/Planet.cpp src/Planet.h src/PlanetType.h src/Math4Orbits.cpp src/Math4Orbits.h)
 
 
 # Detect and add SFML
