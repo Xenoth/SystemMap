@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o"
+  "/home/xenoth/git/my_git/SystemMap/src/Engine.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/Engine.cpp.o"
+  "/home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o"
   "/home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o"
-  "/home/xenoth/git/my_git/SystemMap/src/Planet.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/Planet.cpp.o"
-  "/home/xenoth/git/my_git/SystemMap/src/Star.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/Star.cpp.o"
-  "/home/xenoth/git/my_git/SystemMap/src/System.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/System.cpp.o"
+  "/home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o"
+  "/home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/StellarBody.cpp.o"
+  "/home/xenoth/git/my_git/SystemMap/src/StellarSystem.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o"
   "/home/xenoth/git/my_git/SystemMap/src/main.cpp" "/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles/systemMap.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

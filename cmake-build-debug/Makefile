@@ -189,32 +189,59 @@ systemMap/fast:
 	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/build
 .PHONY : systemMap/fast
 
-src/AbstractStellarBody.o: src/AbstractStellarBody.cpp.o
+src/Engine.o: src/Engine.cpp.o
 
-.PHONY : src/AbstractStellarBody.o
+.PHONY : src/Engine.o
 
 # target to build an object file
-src/AbstractStellarBody.cpp.o:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o
-.PHONY : src/AbstractStellarBody.cpp.o
+src/Engine.cpp.o:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Engine.cpp.o
+.PHONY : src/Engine.cpp.o
 
-src/AbstractStellarBody.i: src/AbstractStellarBody.cpp.i
+src/Engine.i: src/Engine.cpp.i
 
-.PHONY : src/AbstractStellarBody.i
+.PHONY : src/Engine.i
 
 # target to preprocess a source file
-src/AbstractStellarBody.cpp.i:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.i
-.PHONY : src/AbstractStellarBody.cpp.i
+src/Engine.cpp.i:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
 
-src/AbstractStellarBody.s: src/AbstractStellarBody.cpp.s
+src/Engine.s: src/Engine.cpp.s
 
-.PHONY : src/AbstractStellarBody.s
+.PHONY : src/Engine.s
 
 # target to generate assembly for a file
-src/AbstractStellarBody.cpp.s:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.s
-.PHONY : src/AbstractStellarBody.cpp.s
+src/Engine.cpp.s:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
+
+src/GraphicalEntity.o: src/GraphicalEntity.cpp.o
+
+.PHONY : src/GraphicalEntity.o
+
+# target to build an object file
+src/GraphicalEntity.cpp.o:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
+.PHONY : src/GraphicalEntity.cpp.o
+
+src/GraphicalEntity.i: src/GraphicalEntity.cpp.i
+
+.PHONY : src/GraphicalEntity.i
+
+# target to preprocess a source file
+src/GraphicalEntity.cpp.i:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.i
+.PHONY : src/GraphicalEntity.cpp.i
+
+src/GraphicalEntity.s: src/GraphicalEntity.cpp.s
+
+.PHONY : src/GraphicalEntity.s
+
+# target to generate assembly for a file
+src/GraphicalEntity.cpp.s:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.s
+.PHONY : src/GraphicalEntity.cpp.s
 
 src/Math4Orbits.o: src/Math4Orbits.cpp.o
 
@@ -243,86 +270,86 @@ src/Math4Orbits.cpp.s:
 	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.s
 .PHONY : src/Math4Orbits.cpp.s
 
-src/Planet.o: src/Planet.cpp.o
+src/PhysicEntity.o: src/PhysicEntity.cpp.o
 
-.PHONY : src/Planet.o
-
-# target to build an object file
-src/Planet.cpp.o:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Planet.cpp.o
-.PHONY : src/Planet.cpp.o
-
-src/Planet.i: src/Planet.cpp.i
-
-.PHONY : src/Planet.i
-
-# target to preprocess a source file
-src/Planet.cpp.i:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Planet.cpp.i
-.PHONY : src/Planet.cpp.i
-
-src/Planet.s: src/Planet.cpp.s
-
-.PHONY : src/Planet.s
-
-# target to generate assembly for a file
-src/Planet.cpp.s:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Planet.cpp.s
-.PHONY : src/Planet.cpp.s
-
-src/Star.o: src/Star.cpp.o
-
-.PHONY : src/Star.o
+.PHONY : src/PhysicEntity.o
 
 # target to build an object file
-src/Star.cpp.o:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Star.cpp.o
-.PHONY : src/Star.cpp.o
+src/PhysicEntity.cpp.o:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o
+.PHONY : src/PhysicEntity.cpp.o
 
-src/Star.i: src/Star.cpp.i
+src/PhysicEntity.i: src/PhysicEntity.cpp.i
 
-.PHONY : src/Star.i
+.PHONY : src/PhysicEntity.i
 
 # target to preprocess a source file
-src/Star.cpp.i:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Star.cpp.i
-.PHONY : src/Star.cpp.i
+src/PhysicEntity.cpp.i:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.i
+.PHONY : src/PhysicEntity.cpp.i
 
-src/Star.s: src/Star.cpp.s
+src/PhysicEntity.s: src/PhysicEntity.cpp.s
 
-.PHONY : src/Star.s
+.PHONY : src/PhysicEntity.s
 
 # target to generate assembly for a file
-src/Star.cpp.s:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Star.cpp.s
-.PHONY : src/Star.cpp.s
+src/PhysicEntity.cpp.s:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.s
+.PHONY : src/PhysicEntity.cpp.s
 
-src/System.o: src/System.cpp.o
+src/StellarBody.o: src/StellarBody.cpp.o
 
-.PHONY : src/System.o
+.PHONY : src/StellarBody.o
 
 # target to build an object file
-src/System.cpp.o:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/System.cpp.o
-.PHONY : src/System.cpp.o
+src/StellarBody.cpp.o:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarBody.cpp.o
+.PHONY : src/StellarBody.cpp.o
 
-src/System.i: src/System.cpp.i
+src/StellarBody.i: src/StellarBody.cpp.i
 
-.PHONY : src/System.i
+.PHONY : src/StellarBody.i
 
 # target to preprocess a source file
-src/System.cpp.i:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/System.cpp.i
-.PHONY : src/System.cpp.i
+src/StellarBody.cpp.i:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarBody.cpp.i
+.PHONY : src/StellarBody.cpp.i
 
-src/System.s: src/System.cpp.s
+src/StellarBody.s: src/StellarBody.cpp.s
 
-.PHONY : src/System.s
+.PHONY : src/StellarBody.s
 
 # target to generate assembly for a file
-src/System.cpp.s:
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/System.cpp.s
-.PHONY : src/System.cpp.s
+src/StellarBody.cpp.s:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarBody.cpp.s
+.PHONY : src/StellarBody.cpp.s
+
+src/StellarSystem.o: src/StellarSystem.cpp.o
+
+.PHONY : src/StellarSystem.o
+
+# target to build an object file
+src/StellarSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o
+.PHONY : src/StellarSystem.cpp.o
+
+src/StellarSystem.i: src/StellarSystem.cpp.i
+
+.PHONY : src/StellarSystem.i
+
+# target to preprocess a source file
+src/StellarSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarSystem.cpp.i
+.PHONY : src/StellarSystem.cpp.i
+
+src/StellarSystem.s: src/StellarSystem.cpp.s
+
+.PHONY : src/StellarSystem.s
+
+# target to generate assembly for a file
+src/StellarSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarSystem.cpp.s
+.PHONY : src/StellarSystem.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -366,21 +393,24 @@ help:
 	@echo "... install/strip"
 	@echo "... package_source"
 	@echo "... systemMap"
-	@echo "... src/AbstractStellarBody.o"
-	@echo "... src/AbstractStellarBody.i"
-	@echo "... src/AbstractStellarBody.s"
+	@echo "... src/Engine.o"
+	@echo "... src/Engine.i"
+	@echo "... src/Engine.s"
+	@echo "... src/GraphicalEntity.o"
+	@echo "... src/GraphicalEntity.i"
+	@echo "... src/GraphicalEntity.s"
 	@echo "... src/Math4Orbits.o"
 	@echo "... src/Math4Orbits.i"
 	@echo "... src/Math4Orbits.s"
-	@echo "... src/Planet.o"
-	@echo "... src/Planet.i"
-	@echo "... src/Planet.s"
-	@echo "... src/Star.o"
-	@echo "... src/Star.i"
-	@echo "... src/Star.s"
-	@echo "... src/System.o"
-	@echo "... src/System.i"
-	@echo "... src/System.s"
+	@echo "... src/PhysicEntity.o"
+	@echo "... src/PhysicEntity.i"
+	@echo "... src/PhysicEntity.s"
+	@echo "... src/StellarBody.o"
+	@echo "... src/StellarBody.i"
+	@echo "... src/StellarBody.s"
+	@echo "... src/StellarSystem.o"
+	@echo "... src/StellarSystem.i"
+	@echo "... src/StellarSystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -57,33 +57,57 @@ include CMakeFiles/systemMap.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/systemMap.dir/flags.make
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o: CMakeFiles/systemMap.dir/flags.make
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o: ../src/AbstractStellarBody.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp
+CMakeFiles/systemMap.dir/src/Engine.cpp.o: CMakeFiles/systemMap.dir/flags.make
+CMakeFiles/systemMap.dir/src/Engine.cpp.o: ../src/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/systemMap.dir/src/Engine.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/Engine.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/Engine.cpp
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp > CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.i
+CMakeFiles/systemMap.dir/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/Engine.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/Engine.cpp > CMakeFiles/systemMap.dir/src/Engine.cpp.i
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp -o CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.s
+CMakeFiles/systemMap.dir/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/Engine.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/Engine.cpp -o CMakeFiles/systemMap.dir/src/Engine.cpp.s
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.requires:
+CMakeFiles/systemMap.dir/src/Engine.cpp.o.requires:
 
-.PHONY : CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.requires
+.PHONY : CMakeFiles/systemMap.dir/src/Engine.cpp.o.requires
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.provides: CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.requires
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.provides.build
-.PHONY : CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.provides
+CMakeFiles/systemMap.dir/src/Engine.cpp.o.provides: CMakeFiles/systemMap.dir/src/Engine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Engine.cpp.o.provides.build
+.PHONY : CMakeFiles/systemMap.dir/src/Engine.cpp.o.provides
 
-CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o
+CMakeFiles/systemMap.dir/src/Engine.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/Engine.cpp.o
+
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o: CMakeFiles/systemMap.dir/flags.make
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o: ../src/GraphicalEntity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.cpp
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.cpp > CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.i
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.cpp -o CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.s
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.requires:
+
+.PHONY : CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.requires
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.provides: CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.requires
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.provides.build
+.PHONY : CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.provides
+
+CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
 
 
 CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o: CMakeFiles/systemMap.dir/flags.make
 CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o: ../src/Math4Orbits.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp
 
 CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.i: cmake_force
@@ -105,81 +129,81 @@ CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o.provides: CMakeFiles/systemMap.di
 CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o
 
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.o: CMakeFiles/systemMap.dir/flags.make
-CMakeFiles/systemMap.dir/src/Planet.cpp.o: ../src/Planet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/systemMap.dir/src/Planet.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/Planet.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/Planet.cpp
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o: CMakeFiles/systemMap.dir/flags.make
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o: ../src/PhysicEntity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/Planet.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/Planet.cpp > CMakeFiles/systemMap.dir/src/Planet.cpp.i
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp > CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.i
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/Planet.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/Planet.cpp -o CMakeFiles/systemMap.dir/src/Planet.cpp.s
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp -o CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.s
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.o.requires:
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.requires:
 
-.PHONY : CMakeFiles/systemMap.dir/src/Planet.cpp.o.requires
+.PHONY : CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.requires
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.o.provides: CMakeFiles/systemMap.dir/src/Planet.cpp.o.requires
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Planet.cpp.o.provides.build
-.PHONY : CMakeFiles/systemMap.dir/src/Planet.cpp.o.provides
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.provides: CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.requires
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.provides.build
+.PHONY : CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.provides
 
-CMakeFiles/systemMap.dir/src/Planet.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/Planet.cpp.o
-
-
-CMakeFiles/systemMap.dir/src/Star.cpp.o: CMakeFiles/systemMap.dir/flags.make
-CMakeFiles/systemMap.dir/src/Star.cpp.o: ../src/Star.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/systemMap.dir/src/Star.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/Star.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/Star.cpp
-
-CMakeFiles/systemMap.dir/src/Star.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/Star.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/Star.cpp > CMakeFiles/systemMap.dir/src/Star.cpp.i
-
-CMakeFiles/systemMap.dir/src/Star.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/Star.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/Star.cpp -o CMakeFiles/systemMap.dir/src/Star.cpp.s
-
-CMakeFiles/systemMap.dir/src/Star.cpp.o.requires:
-
-.PHONY : CMakeFiles/systemMap.dir/src/Star.cpp.o.requires
-
-CMakeFiles/systemMap.dir/src/Star.cpp.o.provides: CMakeFiles/systemMap.dir/src/Star.cpp.o.requires
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/Star.cpp.o.provides.build
-.PHONY : CMakeFiles/systemMap.dir/src/Star.cpp.o.provides
-
-CMakeFiles/systemMap.dir/src/Star.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/Star.cpp.o
+CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o
 
 
-CMakeFiles/systemMap.dir/src/System.cpp.o: CMakeFiles/systemMap.dir/flags.make
-CMakeFiles/systemMap.dir/src/System.cpp.o: ../src/System.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/systemMap.dir/src/System.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/System.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/System.cpp
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.o: CMakeFiles/systemMap.dir/flags.make
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.o: ../src/StellarBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/systemMap.dir/src/StellarBody.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/StellarBody.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp
 
-CMakeFiles/systemMap.dir/src/System.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/System.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/System.cpp > CMakeFiles/systemMap.dir/src/System.cpp.i
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/StellarBody.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp > CMakeFiles/systemMap.dir/src/StellarBody.cpp.i
 
-CMakeFiles/systemMap.dir/src/System.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/System.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/System.cpp -o CMakeFiles/systemMap.dir/src/System.cpp.s
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/StellarBody.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp -o CMakeFiles/systemMap.dir/src/StellarBody.cpp.s
 
-CMakeFiles/systemMap.dir/src/System.cpp.o.requires:
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.requires:
 
-.PHONY : CMakeFiles/systemMap.dir/src/System.cpp.o.requires
+.PHONY : CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.requires
 
-CMakeFiles/systemMap.dir/src/System.cpp.o.provides: CMakeFiles/systemMap.dir/src/System.cpp.o.requires
-	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/System.cpp.o.provides.build
-.PHONY : CMakeFiles/systemMap.dir/src/System.cpp.o.provides
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.provides: CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.requires
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.provides.build
+.PHONY : CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.provides
 
-CMakeFiles/systemMap.dir/src/System.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/System.cpp.o
+CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/StellarBody.cpp.o
+
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o: CMakeFiles/systemMap.dir/flags.make
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o: ../src/StellarSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/StellarSystem.cpp
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemMap.dir/src/StellarSystem.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xenoth/git/my_git/SystemMap/src/StellarSystem.cpp > CMakeFiles/systemMap.dir/src/StellarSystem.cpp.i
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemMap.dir/src/StellarSystem.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xenoth/git/my_git/SystemMap/src/StellarSystem.cpp -o CMakeFiles/systemMap.dir/src/StellarSystem.cpp.s
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.requires:
+
+.PHONY : CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.requires
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.provides: CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.requires
+	$(MAKE) -f CMakeFiles/systemMap.dir/build.make CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.provides.build
+.PHONY : CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.provides
+
+CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.provides.build: CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o
 
 
 CMakeFiles/systemMap.dir/src/main.cpp.o: CMakeFiles/systemMap.dir/flags.make
 CMakeFiles/systemMap.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/systemMap.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/systemMap.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemMap.dir/src/main.cpp.o -c /home/xenoth/git/my_git/SystemMap/src/main.cpp
 
 CMakeFiles/systemMap.dir/src/main.cpp.i: cmake_force
@@ -203,21 +227,23 @@ CMakeFiles/systemMap.dir/src/main.cpp.o.provides.build: CMakeFiles/systemMap.dir
 
 # Object files for target systemMap
 systemMap_OBJECTS = \
-"CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o" \
+"CMakeFiles/systemMap.dir/src/Engine.cpp.o" \
+"CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o" \
 "CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o" \
-"CMakeFiles/systemMap.dir/src/Planet.cpp.o" \
-"CMakeFiles/systemMap.dir/src/Star.cpp.o" \
-"CMakeFiles/systemMap.dir/src/System.cpp.o" \
+"CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o" \
+"CMakeFiles/systemMap.dir/src/StellarBody.cpp.o" \
+"CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o" \
 "CMakeFiles/systemMap.dir/src/main.cpp.o"
 
 # External object files for target systemMap
 systemMap_EXTERNAL_OBJECTS =
 
-systemMap: CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o
+systemMap: CMakeFiles/systemMap.dir/src/Engine.cpp.o
+systemMap: CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
 systemMap: CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o
-systemMap: CMakeFiles/systemMap.dir/src/Planet.cpp.o
-systemMap: CMakeFiles/systemMap.dir/src/Star.cpp.o
-systemMap: CMakeFiles/systemMap.dir/src/System.cpp.o
+systemMap: CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o
+systemMap: CMakeFiles/systemMap.dir/src/StellarBody.cpp.o
+systemMap: CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o
 systemMap: CMakeFiles/systemMap.dir/src/main.cpp.o
 systemMap: CMakeFiles/systemMap.dir/build.make
 systemMap: /usr/local/lib/libsfml-system.so
@@ -226,7 +252,7 @@ systemMap: /usr/local/lib/libsfml-graphics.so
 systemMap: /usr/local/lib/libsfml-network.so
 systemMap: /usr/local/lib/libsfml-audio.so
 systemMap: CMakeFiles/systemMap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable systemMap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xenoth/git/my_git/SystemMap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable systemMap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/systemMap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -234,11 +260,12 @@ CMakeFiles/systemMap.dir/build: systemMap
 
 .PHONY : CMakeFiles/systemMap.dir/build
 
-CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/AbstractStellarBody.cpp.o.requires
+CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/Engine.cpp.o.requires
+CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o.requires
 CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o.requires
-CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/Planet.cpp.o.requires
-CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/Star.cpp.o.requires
-CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/System.cpp.o.requires
+CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o.requires
+CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/StellarBody.cpp.o.requires
+CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o.requires
 CMakeFiles/systemMap.dir/requires: CMakeFiles/systemMap.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/systemMap.dir/requires

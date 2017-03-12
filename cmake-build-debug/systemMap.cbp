@@ -146,10 +146,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.cpp">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Engine.cpp">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/AbstractStellarBody.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Engine.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.cpp">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.h">
+			<Option target="systemMap"/>
+		</Unit>
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Manager.h">
 			<Option target="systemMap"/>
 		</Unit>
 		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp">
@@ -158,28 +167,25 @@
 		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Planet.cpp">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Planet.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/PhysicEntity.h">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/PlanetType.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Star.cpp">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StellarBody.h">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/Star.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StellarBodyType.h">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StarType.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StellarSystem.cpp">
 			<Option target="systemMap"/>
 		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/System.cpp">
-			<Option target="systemMap"/>
-		</Unit>
-		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/System.h">
+		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/StellarSystem.h">
 			<Option target="systemMap"/>
 		</Unit>
 		<Unit filename="/home/xenoth/git/my_git/SystemMap/src/main.cpp">
