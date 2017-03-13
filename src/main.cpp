@@ -52,10 +52,68 @@ int main(int argc, char* argv[]) {
                 case sf::Event::KeyPressed:{
                     if(event.key.code == sf::Keyboard::Escape)
                         app.close();
-                    else if(event.key.code == sf::Keyboard::Right && warp < 24*2)
-                        warp++;
-                    else if(event.key.code == sf::Keyboard::Left && warp > 0)
-                        warp--;
+                    else if(event.key.code == sf::Keyboard::Right ){
+                        switch (warp){
+                            case 1 :
+                            {
+                                warp=5;
+                            }
+                                break;
+                            case 5 :
+                            {
+                                warp=10;
+                            }
+                                break;
+                            case 10 :
+                            {
+                                warp=100;
+                            }
+                                break;
+                            case 100 :
+                            {
+                                warp=1000;
+                            }
+                                break;
+                            case 1000 :
+                            {
+                                warp=10000;
+                            }
+                                break;
+                            case 10000 :
+                            {
+                                warp=100000;
+                            }
+                                break;
+                        }
+                    }
+                    else if(event.key.code == sf::Keyboard::Left && warp > 0){
+                        switch (warp) {
+                            case 5 : {
+                                warp = 1;
+                            }
+                                break;
+                            case 10 : {
+                                warp = 5;
+                            }
+                                break;
+                            case 100 : {
+                                warp = 10;
+                            }
+                                break;
+                            case 1000 : {
+                                warp = 100;
+                            }
+                                break;
+                            case 10000 : {
+                                warp = 1000;
+                            }
+                                break;
+                            case 100000 : {
+                                warp = 10000;
+                            }
+                                break;
+                        }
+                    }
                     else if(event.key.code == sf::Keyboard::Down)
                         warp=1;
                 }
@@ -66,7 +124,7 @@ int main(int argc, char* argv[]) {
             }
         }
         app.clear(sf::Color(0, 0, 0,255));
-        system.update(86400/24*warp);
+        system.update(warp);
         system.draw(app);
         app.display();
     }
