@@ -5,11 +5,13 @@ It is powered by C++ and SFML.
 
 # Uses
 * the multimedia API SFML2 http://www.sfml-dev.org/index-fr.php
+* the signal/slot library SISL https://github.com/Asphox/SISL
 
 ## Requirements
 * cmake 2.8
 * g++
 * SFML2
+* SISL2.0
 
 ## Build
 First create the build folder and move in :
@@ -36,4 +38,4 @@ Actualy this only can be done manualy, but target install will surely come soon
 
 # Authors
 * BAILLEUX Pol (Xenoth - coding)
-* SOTON Dylan (??? - Formulas)
+* SOTON Dylan (Asphox - Formulas,EventManager)
