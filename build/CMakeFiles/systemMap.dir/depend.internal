@@ -12,10 +12,10 @@ CMakeFiles/systemMap.dir/src/Engine.cpp.o
  /usr/local/include/SFML/Graphics/Rect.hpp
  /usr/local/include/SFML/Graphics/Rect.inl
  /usr/local/include/SFML/Graphics/Texture.hpp
- /usr/local/include/SFML/System/Export.hpp
- /usr/local/include/SFML/System/NonCopyable.hpp
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Export.hpp
+ /usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
  /usr/local/include/SFML/Window/Export.hpp
  /usr/local/include/SFML/Window/GlResource.hpp
 CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
@@ -39,16 +39,16 @@ CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
  /usr/local/include/SFML/Graphics/Transformable.hpp
  /usr/local/include/SFML/Graphics/Vertex.hpp
  /usr/local/include/SFML/Graphics/View.hpp
- /usr/local/include/SFML/System/Clock.hpp
- /usr/local/include/SFML/System/Export.hpp
- /usr/local/include/SFML/System/NonCopyable.hpp
- /usr/local/include/SFML/System/String.hpp
- /usr/local/include/SFML/System/String.inl
- /usr/local/include/SFML/System/Time.hpp
- /usr/local/include/SFML/System/Utf.hpp
- /usr/local/include/SFML/System/Utf.inl
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Clock.hpp
+ /usr/local/include/SFML/StellarSystem/Export.hpp
+ /usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+ /usr/local/include/SFML/StellarSystem/String.hpp
+ /usr/local/include/SFML/StellarSystem/String.inl
+ /usr/local/include/SFML/StellarSystem/Time.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
  /usr/local/include/SFML/Window/ContextSettings.hpp
  /usr/local/include/SFML/Window/Export.hpp
  /usr/local/include/SFML/Window/GlResource.hpp
@@ -59,14 +59,14 @@ CMakeFiles/systemMap.dir/src/GraphicalEntity.cpp.o
 CMakeFiles/systemMap.dir/src/Math4Orbits.cpp.o
  /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.cpp
  /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
 CMakeFiles/systemMap.dir/src/PhysicEntity.cpp.o
  /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h
  /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp
  /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.h
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
 CMakeFiles/systemMap.dir/src/StellarBody.cpp.o
  /home/xenoth/git/my_git/SystemMap/src/GraphicalEntity.h
  /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.h
@@ -91,16 +91,16 @@ CMakeFiles/systemMap.dir/src/StellarBody.cpp.o
  /usr/local/include/SFML/Graphics/Transformable.hpp
  /usr/local/include/SFML/Graphics/Vertex.hpp
  /usr/local/include/SFML/Graphics/View.hpp
- /usr/local/include/SFML/System/Clock.hpp
- /usr/local/include/SFML/System/Export.hpp
- /usr/local/include/SFML/System/NonCopyable.hpp
- /usr/local/include/SFML/System/String.hpp
- /usr/local/include/SFML/System/String.inl
- /usr/local/include/SFML/System/Time.hpp
- /usr/local/include/SFML/System/Utf.hpp
- /usr/local/include/SFML/System/Utf.inl
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Clock.hpp
+ /usr/local/include/SFML/StellarSystem/Export.hpp
+ /usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+ /usr/local/include/SFML/StellarSystem/String.hpp
+ /usr/local/include/SFML/StellarSystem/String.inl
+ /usr/local/include/SFML/StellarSystem/Time.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
  /usr/local/include/SFML/Window/ContextSettings.hpp
  /usr/local/include/SFML/Window/Export.hpp
  /usr/local/include/SFML/Window/GlResource.hpp
@@ -149,31 +149,31 @@ CMakeFiles/systemMap.dir/src/StellarSystem.cpp.o
  /usr/local/include/SFML/Graphics/Vertex.hpp
  /usr/local/include/SFML/Graphics/VertexArray.hpp
  /usr/local/include/SFML/Graphics/View.hpp
- /usr/local/include/SFML/System.hpp
- /usr/local/include/SFML/System/Clock.hpp
- /usr/local/include/SFML/System/Err.hpp
- /usr/local/include/SFML/System/Export.hpp
- /usr/local/include/SFML/System/FileInputStream.hpp
- /usr/local/include/SFML/System/InputStream.hpp
- /usr/local/include/SFML/System/Lock.hpp
- /usr/local/include/SFML/System/MemoryInputStream.hpp
- /usr/local/include/SFML/System/Mutex.hpp
- /usr/local/include/SFML/System/NonCopyable.hpp
- /usr/local/include/SFML/System/Sleep.hpp
- /usr/local/include/SFML/System/String.hpp
- /usr/local/include/SFML/System/String.inl
- /usr/local/include/SFML/System/Thread.hpp
- /usr/local/include/SFML/System/Thread.inl
- /usr/local/include/SFML/System/ThreadLocal.hpp
- /usr/local/include/SFML/System/ThreadLocalPtr.hpp
- /usr/local/include/SFML/System/ThreadLocalPtr.inl
- /usr/local/include/SFML/System/Time.hpp
- /usr/local/include/SFML/System/Utf.hpp
- /usr/local/include/SFML/System/Utf.inl
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
- /usr/local/include/SFML/System/Vector3.hpp
- /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/SFML/StellarSystem.hpp
+ /usr/local/include/SFML/StellarSystem/Clock.hpp
+ /usr/local/include/SFML/StellarSystem/Err.hpp
+ /usr/local/include/SFML/StellarSystem/Export.hpp
+ /usr/local/include/SFML/StellarSystem/FileInputStream.hpp
+ /usr/local/include/SFML/StellarSystem/InputStream.hpp
+ /usr/local/include/SFML/StellarSystem/Lock.hpp
+ /usr/local/include/SFML/StellarSystem/MemoryInputStream.hpp
+ /usr/local/include/SFML/StellarSystem/Mutex.hpp
+ /usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+ /usr/local/include/SFML/StellarSystem/Sleep.hpp
+ /usr/local/include/SFML/StellarSystem/String.hpp
+ /usr/local/include/SFML/StellarSystem/String.inl
+ /usr/local/include/SFML/StellarSystem/Thread.hpp
+ /usr/local/include/SFML/StellarSystem/Thread.inl
+ /usr/local/include/SFML/StellarSystem/ThreadLocal.hpp
+ /usr/local/include/SFML/StellarSystem/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/StellarSystem/ThreadLocalPtr.inl
+ /usr/local/include/SFML/StellarSystem/Time.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Vector3.hpp
+ /usr/local/include/SFML/StellarSystem/Vector3.inl
  /usr/local/include/SFML/Window.hpp
  /usr/local/include/SFML/Window/Context.hpp
  /usr/local/include/SFML/Window/ContextSettings.hpp
@@ -229,31 +229,31 @@ CMakeFiles/systemMap.dir/src/main.cpp.o
  /usr/local/include/SFML/Graphics/Vertex.hpp
  /usr/local/include/SFML/Graphics/VertexArray.hpp
  /usr/local/include/SFML/Graphics/View.hpp
- /usr/local/include/SFML/System.hpp
- /usr/local/include/SFML/System/Clock.hpp
- /usr/local/include/SFML/System/Err.hpp
- /usr/local/include/SFML/System/Export.hpp
- /usr/local/include/SFML/System/FileInputStream.hpp
- /usr/local/include/SFML/System/InputStream.hpp
- /usr/local/include/SFML/System/Lock.hpp
- /usr/local/include/SFML/System/MemoryInputStream.hpp
- /usr/local/include/SFML/System/Mutex.hpp
- /usr/local/include/SFML/System/NonCopyable.hpp
- /usr/local/include/SFML/System/Sleep.hpp
- /usr/local/include/SFML/System/String.hpp
- /usr/local/include/SFML/System/String.inl
- /usr/local/include/SFML/System/Thread.hpp
- /usr/local/include/SFML/System/Thread.inl
- /usr/local/include/SFML/System/ThreadLocal.hpp
- /usr/local/include/SFML/System/ThreadLocalPtr.hpp
- /usr/local/include/SFML/System/ThreadLocalPtr.inl
- /usr/local/include/SFML/System/Time.hpp
- /usr/local/include/SFML/System/Utf.hpp
- /usr/local/include/SFML/System/Utf.inl
- /usr/local/include/SFML/System/Vector2.hpp
- /usr/local/include/SFML/System/Vector2.inl
- /usr/local/include/SFML/System/Vector3.hpp
- /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/SFML/StellarSystem.hpp
+ /usr/local/include/SFML/StellarSystem/Clock.hpp
+ /usr/local/include/SFML/StellarSystem/Err.hpp
+ /usr/local/include/SFML/StellarSystem/Export.hpp
+ /usr/local/include/SFML/StellarSystem/FileInputStream.hpp
+ /usr/local/include/SFML/StellarSystem/InputStream.hpp
+ /usr/local/include/SFML/StellarSystem/Lock.hpp
+ /usr/local/include/SFML/StellarSystem/MemoryInputStream.hpp
+ /usr/local/include/SFML/StellarSystem/Mutex.hpp
+ /usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+ /usr/local/include/SFML/StellarSystem/Sleep.hpp
+ /usr/local/include/SFML/StellarSystem/String.hpp
+ /usr/local/include/SFML/StellarSystem/String.inl
+ /usr/local/include/SFML/StellarSystem/Thread.hpp
+ /usr/local/include/SFML/StellarSystem/Thread.inl
+ /usr/local/include/SFML/StellarSystem/ThreadLocal.hpp
+ /usr/local/include/SFML/StellarSystem/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/StellarSystem/ThreadLocalPtr.inl
+ /usr/local/include/SFML/StellarSystem/Time.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.hpp
+ /usr/local/include/SFML/StellarSystem/Utf.inl
+ /usr/local/include/SFML/StellarSystem/Vector2.hpp
+ /usr/local/include/SFML/StellarSystem/Vector2.inl
+ /usr/local/include/SFML/StellarSystem/Vector3.hpp
+ /usr/local/include/SFML/StellarSystem/Vector3.inl
  /usr/local/include/SFML/Window.hpp
  /usr/local/include/SFML/Window/Context.hpp
  /usr/local/include/SFML/Window/ContextSettings.hpp

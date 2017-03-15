@@ -47,7 +47,7 @@ Math4Orbits.h
 /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h
 cmath
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.cpp
@@ -57,7 +57,7 @@ Math4Orbits.h
 /home/xenoth/git/my_git/SystemMap/src/Math4Orbits.h
 
 /home/xenoth/git/my_git/SystemMap/src/PhysicEntity.h
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /home/xenoth/git/my_git/SystemMap/src/StellarBody.cpp
@@ -205,9 +205,9 @@ SFML/Graphics/Texture.hpp
 -
 SFML/Graphics/Rect.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
-SFML/System/String.hpp
+SFML/StellarSystem/String.hpp
 -
 map
 -
@@ -221,9 +221,9 @@ SFML/Graphics/Transform.hpp
 -
 SFML/Graphics/Color.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
-SFML/System/Vector3.hpp
+SFML/StellarSystem/Vector3.hpp
 -
 SFML/Graphics/Glsl.inl
 -
@@ -251,7 +251,7 @@ vector
 /usr/local/include/SFML/Graphics/PrimitiveType.hpp
 
 /usr/local/include/SFML/Graphics/Rect.hpp
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 algorithm
 -
@@ -293,7 +293,7 @@ SFML/Graphics/PrimitiveType.hpp
 -
 SFML/Graphics/Vertex.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 
 /usr/local/include/SFML/Graphics/RenderTexture.hpp
@@ -323,11 +323,11 @@ SFML/Graphics/Glsl.hpp
 -
 SFML/Window/GlResource.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
-SFML/System/Vector3.hpp
+SFML/StellarSystem/Vector3.hpp
 -
 map
 -
@@ -343,7 +343,7 @@ SFML/Graphics/Transformable.hpp
 -
 SFML/Graphics/VertexArray.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /usr/local/include/SFML/Graphics/Sprite.hpp
@@ -371,7 +371,7 @@ SFML/Graphics/Rect.hpp
 -
 SFML/Graphics/VertexArray.hpp
 -
-SFML/System/String.hpp
+SFML/StellarSystem/String.hpp
 -
 string
 -
@@ -391,7 +391,7 @@ SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /usr/local/include/SFML/Graphics/Transformable.hpp
@@ -405,7 +405,7 @@ SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /usr/local/include/SFML/Graphics/VertexArray.hpp
@@ -429,119 +429,119 @@ SFML/Graphics/Rect.hpp
 -
 SFML/Graphics/Transform.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
-/usr/local/include/SFML/System.hpp
+/usr/local/include/SFML/StellarSystem.hpp
 SFML/Config.hpp
 -
-SFML/System/Clock.hpp
+SFML/StellarSystem/Clock.hpp
 -
-SFML/System/Err.hpp
+SFML/StellarSystem/Err.hpp
 -
-SFML/System/FileInputStream.hpp
+SFML/StellarSystem/FileInputStream.hpp
 -
-SFML/System/InputStream.hpp
+SFML/StellarSystem/InputStream.hpp
 -
-SFML/System/Lock.hpp
+SFML/StellarSystem/Lock.hpp
 -
-SFML/System/MemoryInputStream.hpp
+SFML/StellarSystem/MemoryInputStream.hpp
 -
-SFML/System/Mutex.hpp
+SFML/StellarSystem/Mutex.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
-SFML/System/Sleep.hpp
+SFML/StellarSystem/Sleep.hpp
 -
-SFML/System/String.hpp
+SFML/StellarSystem/String.hpp
 -
-SFML/System/Thread.hpp
+SFML/StellarSystem/Thread.hpp
 -
-SFML/System/ThreadLocal.hpp
+SFML/StellarSystem/ThreadLocal.hpp
 -
-SFML/System/ThreadLocalPtr.hpp
+SFML/StellarSystem/ThreadLocalPtr.hpp
 -
-SFML/System/Time.hpp
+SFML/StellarSystem/Time.hpp
 -
-SFML/System/Utf.hpp
+SFML/StellarSystem/Utf.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
-SFML/System/Vector3.hpp
--
-
-/usr/local/include/SFML/System/Clock.hpp
-SFML/System/Export.hpp
--
-SFML/System/Time.hpp
+SFML/StellarSystem/Vector3.hpp
 -
 
-/usr/local/include/SFML/System/Err.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Clock.hpp
+SFML/StellarSystem/Export.hpp
+-
+SFML/StellarSystem/Time.hpp
+-
+
+/usr/local/include/SFML/StellarSystem/Err.hpp
+SFML/StellarSystem/Export.hpp
 -
 ostream
 -
 
-/usr/local/include/SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Export.hpp
 SFML/Config.hpp
 -
 
-/usr/local/include/SFML/System/FileInputStream.hpp
+/usr/local/include/SFML/StellarSystem/FileInputStream.hpp
 SFML/Config.hpp
 -
-SFML/System/Export.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/InputStream.hpp
+SFML/StellarSystem/InputStream.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 cstdio
 -
 string
 -
 
-/usr/local/include/SFML/System/InputStream.hpp
+/usr/local/include/SFML/StellarSystem/InputStream.hpp
 SFML/Config.hpp
 -
-SFML/System/Export.hpp
+SFML/StellarSystem/Export.hpp
 -
 
-/usr/local/include/SFML/System/Lock.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Lock.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 
-/usr/local/include/SFML/System/MemoryInputStream.hpp
+/usr/local/include/SFML/StellarSystem/MemoryInputStream.hpp
 SFML/Config.hpp
 -
-SFML/System/InputStream.hpp
+SFML/StellarSystem/InputStream.hpp
 -
-SFML/System/Export.hpp
+SFML/StellarSystem/Export.hpp
 -
 cstdlib
 -
 
-/usr/local/include/SFML/System/Mutex.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Mutex.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/NonCopyable.hpp
--
-
-/usr/local/include/SFML/System/NonCopyable.hpp
-SFML/System/Export.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 
-/usr/local/include/SFML/System/Sleep.hpp
-SFML/System/Export.hpp
--
-SFML/System/Time.hpp
+/usr/local/include/SFML/StellarSystem/NonCopyable.hpp
+SFML/StellarSystem/Export.hpp
 -
 
-/usr/local/include/SFML/System/String.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Sleep.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/Utf.hpp
+SFML/StellarSystem/Time.hpp
+-
+
+/usr/local/include/SFML/StellarSystem/String.hpp
+SFML/StellarSystem/Export.hpp
+-
+SFML/StellarSystem/Utf.hpp
 -
 iterator
 -
@@ -549,44 +549,44 @@ locale
 -
 string
 -
-SFML/System/String.inl
+SFML/StellarSystem/String.inl
 -
 
-/usr/local/include/SFML/System/String.inl
+/usr/local/include/SFML/StellarSystem/String.inl
 
-/usr/local/include/SFML/System/Thread.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/Thread.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 cstdlib
 -
-SFML/System/Thread.inl
+SFML/StellarSystem/Thread.inl
 -
 
-/usr/local/include/SFML/System/Thread.inl
+/usr/local/include/SFML/StellarSystem/Thread.inl
 
-/usr/local/include/SFML/System/ThreadLocal.hpp
-SFML/System/Export.hpp
+/usr/local/include/SFML/StellarSystem/ThreadLocal.hpp
+SFML/StellarSystem/Export.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 cstdlib
 -
 
-/usr/local/include/SFML/System/ThreadLocalPtr.hpp
-SFML/System/ThreadLocal.hpp
+/usr/local/include/SFML/StellarSystem/ThreadLocalPtr.hpp
+SFML/StellarSystem/ThreadLocal.hpp
 -
-SFML/System/ThreadLocalPtr.inl
--
-
-/usr/local/include/SFML/System/ThreadLocalPtr.inl
-
-/usr/local/include/SFML/System/Time.hpp
-SFML/System/Export.hpp
+SFML/StellarSystem/ThreadLocalPtr.inl
 -
 
-/usr/local/include/SFML/System/Utf.hpp
+/usr/local/include/SFML/StellarSystem/ThreadLocalPtr.inl
+
+/usr/local/include/SFML/StellarSystem/Time.hpp
+SFML/StellarSystem/Export.hpp
+-
+
+/usr/local/include/SFML/StellarSystem/Utf.hpp
 SFML/Config.hpp
 -
 algorithm
@@ -597,25 +597,25 @@ string
 -
 cstdlib
 -
-SFML/System/Utf.inl
+SFML/StellarSystem/Utf.inl
 -
 
-/usr/local/include/SFML/System/Utf.inl
+/usr/local/include/SFML/StellarSystem/Utf.inl
 
-/usr/local/include/SFML/System/Vector2.hpp
-SFML/System/Vector2.inl
+/usr/local/include/SFML/StellarSystem/Vector2.hpp
+SFML/StellarSystem/Vector2.inl
 -
 
-/usr/local/include/SFML/System/Vector2.inl
+/usr/local/include/SFML/StellarSystem/Vector2.inl
 
-/usr/local/include/SFML/System/Vector3.hpp
-SFML/System/Vector3.inl
+/usr/local/include/SFML/StellarSystem/Vector3.hpp
+SFML/StellarSystem/Vector3.inl
 -
 
-/usr/local/include/SFML/System/Vector3.inl
+/usr/local/include/SFML/StellarSystem/Vector3.inl
 
 /usr/local/include/SFML/Window.hpp
-SFML/System.hpp
+SFML/StellarSystem.hpp
 -
 SFML/Window/Context.hpp
 -
@@ -649,7 +649,7 @@ SFML/Window/GlResource.hpp
 -
 SFML/Window/ContextSettings.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 
 /usr/local/include/SFML/Window/ContextSettings.hpp
@@ -673,13 +673,13 @@ SFML/Config.hpp
 /usr/local/include/SFML/Window/GlResource.hpp
 SFML/Window/Export.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
 
 /usr/local/include/SFML/Window/Joystick.hpp
 SFML/Window/Export.hpp
 -
-SFML/System/String.hpp
+SFML/StellarSystem/String.hpp
 -
 
 /usr/local/include/SFML/Window/Keyboard.hpp
@@ -689,21 +689,21 @@ SFML/Window/Export.hpp
 /usr/local/include/SFML/Window/Mouse.hpp
 SFML/Window/Export.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /usr/local/include/SFML/Window/Sensor.hpp
 SFML/Window/Export.hpp
 -
-SFML/System/Vector3.hpp
+SFML/StellarSystem/Vector3.hpp
 -
-SFML/System/Time.hpp
+SFML/StellarSystem/Time.hpp
 -
 
 /usr/local/include/SFML/Window/Touch.hpp
 SFML/Window/Export.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
 
 /usr/local/include/SFML/Window/VideoMode.hpp
@@ -725,13 +725,13 @@ SFML/Window/WindowStyle.hpp
 -
 SFML/Window/GlResource.hpp
 -
-SFML/System/Clock.hpp
+SFML/StellarSystem/Clock.hpp
 -
-SFML/System/Vector2.hpp
+SFML/StellarSystem/Vector2.hpp
 -
-SFML/System/NonCopyable.hpp
+SFML/StellarSystem/NonCopyable.hpp
 -
-SFML/System/String.hpp
+SFML/StellarSystem/String.hpp
 -
 
 /usr/local/include/SFML/Window/WindowHandle.hpp
