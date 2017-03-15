@@ -11,7 +11,6 @@ It is powered by C++ and SFML.
 * cmake 2.8
 * g++
 * SFML2
-* SISL2.0
 
 ## Build
 First create the build folder and move in :
