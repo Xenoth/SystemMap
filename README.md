@@ -34,6 +34,6 @@ Execute :
 ## Install
 Actualy this only can be done manualy, but target install will surely come soon
 
-## Authors
+# Authors
 * BAILLEUX Pol (Xenoth - coding)
 * SOTON Dylan (??? - Formulas)
