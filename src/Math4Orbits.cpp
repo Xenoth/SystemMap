@@ -46,4 +46,13 @@ sf::Vector2<double> velocityOnPosition(sf::Vector2<double> velocity, sf::Vector2
     return sf::Vector2<double>(position.x + T * velocity.x, position.y + T * velocity.y);
 }
 
+sf::Vector2<float> convert_position_physic_to_graphic(sf::Vector2<double> position)
+{
+    position.x = (position.x/712082085.714)+(700/2);
+    position.y = (position.y/712082085.714)+(700/2);
+
+    return (sf::Vector2<float>)position;
+}
+
+
 

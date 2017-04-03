@@ -13,8 +13,8 @@ const std::string &System::getName() const {
     return name;
 }
 
-bool System::addStellarBody(const StellarBody body){
-    if(body.getMass() < main_body.getMass()){
+bool System::addStellarBody(StellarBody* body){
+    if(body->getMass() < main_body.getMass()){
         bodies.push_back(body);
         return true;
     }
@@ -25,7 +25,7 @@ void System::update(const double &T) {
 
     for(size_t i = 0; i < bodies.size(); i++){
 
-        main_body.OrbitCalculation(bodies.at(i), T);
+        main_body.OrbitCalculation(*bodies.at(i), T);
     }
 }
 
@@ -33,23 +33,20 @@ bool System::initGraphical()
 {
     main_body.loadTexture(engine.textureManager.getRessource(stellarBodyType2String(main_body.getStellarBodyType())));
     for(size_t i=0; i < bodies.size(); i++){
-        bodies.at(i).loadTexture(engine.textureManager.getRessource(stellarBodyType2String(bodies.at(i).getStellarBodyType())));
+        bodies.at(i)->loadTexture(engine.textureManager.getRessource(stellarBodyType2String(bodies.at(i)->getStellarBodyType())));
     }
 }
 
 void System::draw(sf::RenderWindow &window) {
     main_body.setSpritePosition(sf::Vector2f((700/2), (700/2)));
     main_body.draw(window);
+
     for(size_t i = 0; i < bodies.size(); i++)
     {
-        sf::Vector2<double> position = bodies.at(i).getPosition();
-        sf::Vector2f positionOnScreen;
-
-        positionOnScreen.x = (position.x/712082085.714)+(700/2);
-        positionOnScreen.y = (position.y/712082085.714)+(700/2);
-
-        bodies.at(i).setSpritePosition(positionOnScreen);
-        bodies.at(i).draw(window);
+        sf::Vector2f positionOnScreen = convert_position_physic_to_graphic(bodies.at(i)->getPosition());
+        bodies.at(i)->setSpritePosition(positionOnScreen);
+        bodies.at(i)->draw(window);
+        bodies.at(i)->drawOrbit(window);
     }
 }
 

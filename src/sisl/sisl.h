@@ -17,6 +17,7 @@ Date : 15/03/2017
 #include <vector>
 #include <unordered_map>
 #include <functional>
+#include <iostream>
 
 #define SLOT(name,obj,fct,...) sisl::Slot<__VA_ARGS__> name = sisl::Slot<__VA_ARGS__>(this,&obj::fct)
 #define EXT_SLOT(name,fct,...) sisl::Slot<__VA_ARGS__> name = sisl::Slot<__VA_ARGS__>(&fct)

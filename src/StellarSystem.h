@@ -18,7 +18,7 @@ class System {
 
         const std::string &getName() const;
 
-        bool addStellarBody(const StellarBody body);
+        bool addStellarBody(StellarBody* body);
 
         void update(const double &T);
 
@@ -29,7 +29,7 @@ private :
         std::string name;
         StellarBody main_body;
 
-        std::vector<StellarBody> bodies;
+        std::vector<StellarBody*> bodies;
         Engine engine;
 
         std::string stellarBodyType2String(StellarBodyType stellarBodyType);

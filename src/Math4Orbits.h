@@ -13,6 +13,7 @@ const double pi = 3.14159265358979323846;
 
 double calculateDistance(sf::Vector2<double> to, sf::Vector2<double> from);
 double calculateAngle(sf::Vector2<double> orbitedBodyPos, sf::Vector2<double> orbitingBodyPos);
+sf::Vector2<float> convert_position_physic_to_graphic(sf::Vector2<double> positionPhysic);
 
 sf::Vector2<double> calculateAccelerationForce(double orbitedBodyMass, double orbitingBodyMass, double distance, double angle);
 sf::Vector2<double> accelerationOnVelocity(sf::Vector2<double> acceleration, sf::Vector2<double> velocity, double T);

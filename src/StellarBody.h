@@ -8,20 +8,35 @@
 #include "PhysicEntity.h"
 #include "GraphicalEntity.h"
 #include "StellarBodyType.h"
+#include "Orbit.h"
 
 class StellarBody : public PhysicEntity, public GraphicalEntity {
 
     public:
 
     StellarBody(double mass, double radius, const sf::Vector2<double> &position, const sf::Vector2<double> &velocity,
-                const sf::Vector2<double> &acceleration, const std::string &name, StellarBodyType stellarBodyType);
+                const sf::Vector2<double> &acceleration, const std::string &name, StellarBodyType stellarBodyType, StellarBody* orbited_body = nullptr);
 
     const std::string &getName() const;
     const StellarBodyType &getStellarBodyType() const;
 
+    ~StellarBody(){ delete orbit; }
+
+    inline void drawOrbit(sf::RenderWindow& window)
+    {
+        if(orbit)
+        {
+            window.draw(*orbit->getOrbitForm());
+        }
+    }
+
+
+
     private:
         std::string name;
         StellarBodyType stellarBodyType;
+        StellarBody* orbited_body;
+        Orbit* orbit;
 };
 
 #endif //SYSTEMMAP_STELLARBODY_H

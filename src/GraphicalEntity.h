@@ -18,6 +18,7 @@ class GraphicalEntity {
 
         void setSpritePosition(sf::Vector2f position);
         void draw(sf::RenderWindow &window);
+        void drawOrbit(sf::RenderWindow &window){}
 
     protected:
         sf::Sprite sprite;
