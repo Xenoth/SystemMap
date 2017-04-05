@@ -1,84 +1,11 @@
 #include "StellarBody.h"
 #include "StellarSystem.h"
 #include "Engine.h"
-#include "EventManager.h"
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-size_t warp=1;
-
-void Warp_positive()
-{
-            switch (warp){
-                            case 1 :
-                            {
-                                warp=5;
-                            }
-                                break;
-                            case 5 :
-                            {
-                                warp=10;
-                            }
-                                break;
-                            case 10 :
-                            {
-                                warp=100;
-                            }
-                                break;
-                            case 100 :
-                            {
-                                warp=1000;
-                            }
-                                break;
-                            case 1000 :
-                            {
-                                warp=10000;
-                            }
-                                break;
-                            case 10000 :
-                            {
-                                warp=100000;
-                            }
-                                break;
-                        }
-}EXT_SLOT(slot_warp_positive,Warp_positive);
-
-void Warp_negative()
-{
-                       switch (warp) {
-                            case 5 : {
-                                warp = 1;
-                            }
-                                break;
-                            case 10 : {
-                                warp = 5;
-                            }
-                                break;
-                            case 100 : {
-                                warp = 10;
-                            }
-                                break;
-                            case 1000 : {
-                                warp = 100;
-                            }
-                                break;
-                            case 10000 : {
-                                warp = 1000;
-                            }
-                                break;
-                            case 100000 : {
-                                warp = 10000;
-                            }
-                                break;
-                        }
-}EXT_SLOT(slot_warp_negative,Warp_negative);
-
-void Warp_stop()
-{
-    warp=1;
-}EXT_SLOT(slot_warp_stop,Warp_stop);
 
 int main(int argc, char* argv[]) {
 
@@ -86,15 +13,8 @@ int main(int argc, char* argv[]) {
     sf::RenderWindow app(sf::VideoMode(700, 700), "System Map");
     app.setFramerateLimit(60);
 
-    EventsManager eventManager(&app);
-    eventManager.Left_pressed.connect(slot_warp_negative);
-    eventManager.Right_pressed.connect(slot_warp_positive);
-    eventManager.Down_pressed.connect(slot_warp_stop);
-    AUTO_SLOT(appClose,[&ap = app](){ ap.close(); });
-    eventManager.Closed.connect(appClose);
 
-
-    Engine engine;
+    Engine engine(app);
     engine.initManagers();
 
     StellarBody sun = StellarBody((1.99*std::pow(10.0, 30.0)), 695700000, sf::Vector2<double>(0,0), sf::Vector2<double>(0,0), sf::Vector2<double>(0,0),"Sol", StellarBodyType::STAR_O);
@@ -113,14 +33,17 @@ int main(int argc, char* argv[]) {
     system.addStellarBody(&mars);
     system.addStellarBody(&halley);
 
+    engine.setSystem(system);
+    engine.initKeyMapping();
+
 
     system.initGraphical();
 
     while(app.isOpen())
     {
-        eventManager.catchEvents();
+        engine.eventManager->catchEvents();
         app.clear(sf::Color(0, 0, 0,255));
-        system.update(warp);
+        system.update();
         system.draw(app);
         app.display();
     }

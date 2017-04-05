@@ -20,12 +20,19 @@ class System {
 
         bool addStellarBody(StellarBody* body);
 
-        void update(const double &T);
+        void update();
 
         bool initGraphical();
         void draw(sf::RenderWindow &window);
 
+        void warp_x10();     SLOT(slot_warp_x10,System,warp_x10);
+        void warp_div10();   SLOT(slot_warp_div10,System,warp_div10);
+        void warp_reset();   SLOT(slot_warp_reset,System,warp_reset);
+
 private :
+
+        unsigned int warp;
+
         std::string name;
         StellarBody main_body;
 

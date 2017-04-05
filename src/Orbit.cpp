@@ -1,25 +1,46 @@
 #include "Orbit.h"
+#include "StellarBody.h"
 
-Orbit::Orbit(sf::Vector2<double> orbited_position, sf::Vector2<double> orbiting_position,  double orbited_mass, double distance, sf::Vector2<double> velocity)
+Orbit::Orbit(StellarBody* orbited, StellarBody* orbiting)
 {
+    this->orbiting = orbiting;
+    this->orbited = orbited;
+    _redefine_areolar_velocity_constant();
     orbit_form.setFillColor(sf::Color::Transparent);
-    orbit_form.setOutlineThickness(2);
-    orbit_form.setOutlineColor(sf::Color(255,255,255));
-    update(orbited_position,orbiting_position,orbited_mass,distance,velocity);
+    setPrecision();
+    setColor();
+    setThickness();
+    update();
 }
 
-void Orbit::update(sf::Vector2<double> orbited_position, sf::Vector2<double> orbiting_position, double orbited_mass, double distance, sf::Vector2<double> velocity)
+void Orbit::_redefine_areolar_velocity_constant()
 {
-    orbit_form.setPointCount(100); //1000 = resolution
-    char ang = -1;
-    if(orbited_position.x > orbiting_position.x)
-        ang = 1;
-    step = 2*pi/100;
-    V = sqrt(velocity.x*velocity.x + velocity.y*velocity.y);
-    K = G*orbited_mass;
-    H = distance*V;
-    Em = 0.5*V*V - K/distance;
-    e = sqrt( 1 + (2*Em*H*H)/(K*K));
+    V = sqrt(orbiting->getVelocity().x*orbiting->getVelocity().x + orbiting->getVelocity().y*orbiting->getVelocity().y);
+    H = calculateDistance(orbited->getPosition(),orbiting->getPosition())*V;
+    if(orbited->getPosition().x > orbiting->getPosition().x)
+        reversed = 1;
+    else
+        reversed = -1;
+}
+
+void Orbit::setOrbitedBody(StellarBody* orbited)
+{
+    this->orbited = orbited;
+    _redefine_areolar_velocity_constant();
+}
+
+void Orbit::update()
+{
+    orbit_form.setPointCount(precision);
+
+    step = 2*pi/precision;
+
+    double distance = calculateDistance(orbited->getPosition(),orbiting->getPosition());
+    V = sqrt(orbiting->getVelocity().x*orbiting->getVelocity().x + orbiting->getVelocity().y*orbiting->getVelocity().y); //velocity abs
+    K = G*orbited->getMass(); //Standard gravitational parameter : G*M_orbited
+    Em = 0.5*V*V - K/distance; //massic Mechanical energy
+    e = sqrt( 1 + (2*Em*H*H)/(K*K)); //Eccentricity
+
     double angle = 0;
     sf::Vector2f graph_position;
 
@@ -29,13 +50,8 @@ void Orbit::update(sf::Vector2<double> orbited_position, sf::Vector2<double> orb
         {
             angle = i*step;
             double r = 1/( (K/(H*H)*(1+e*cos(angle))));
-            orbit_form.setPoint(i,convert_position_physic_to_graphic(sf::Vector2<double>(ang*r*cos(angle),r*sin(angle))));
+            orbit_form.setPoint(i,convert_position_physic_to_graphic(sf::Vector2<double>(reversed*r*cos(angle),r*sin(angle))));
         }
     }
-}
-
-sf::ConvexShape* Orbit::getOrbitForm()
-{
-    return &orbit_form;
 }
 

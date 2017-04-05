@@ -7,7 +7,27 @@
 #include "Math4Orbits.h"
 
 System::System(const std::string name, const StellarBody main_body, Engine &engine) :
-        name(name), main_body(main_body), engine(engine) {}
+        name(name), main_body(main_body), engine(engine)
+{
+    warp = 1;
+}
+
+void System::warp_x10()
+{
+    if( warp < 100000 )
+        warp = warp*10;
+}
+
+void System::warp_div10()
+{
+    if( warp > 1 )
+        warp = warp/10;
+}
+
+void System::warp_reset()
+{
+    warp = 1;
+}
 
 const std::string &System::getName() const {
     return name;
@@ -21,11 +41,11 @@ bool System::addStellarBody(StellarBody* body){
     return false;
 }
 
-void System::update(const double &T) {
+void System::update() {
 
     for(size_t i = 0; i < bodies.size(); i++){
 
-        main_body.OrbitCalculation(*bodies.at(i), T);
+        main_body.OrbitCalculation(*bodies.at(i), warp);
     }
 }
 

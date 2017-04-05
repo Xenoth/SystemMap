@@ -25,7 +25,7 @@ StellarBody::StellarBody(double mass, double radius, const sf::Vector2<double> &
                                                                                                             orbited_body(orbited_body)
 {
     if( orbited_body != nullptr )
-        orbit = new Orbit(orbited_body->getPosition(),getPosition(),orbited_body->getMass(),calculateDistance(position,orbited_body->getPosition()),velocity);
+        orbit = new Orbit(orbited_body,this);
     else
         orbit = nullptr;
 }

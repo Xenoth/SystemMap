@@ -10,6 +10,7 @@
 #include "StellarBodyType.h"
 #include "Orbit.h"
 
+
 class StellarBody : public PhysicEntity, public GraphicalEntity {
 
     public:
@@ -26,7 +27,8 @@ class StellarBody : public PhysicEntity, public GraphicalEntity {
     {
         if(orbit)
         {
-            window.draw(*orbit->getOrbitForm());
+            //orbit->update();
+            orbit->draw(window);
         }
     }
 
