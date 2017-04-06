@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 
     StellarBody halley = StellarBody((1000), 1000, sf::Vector2<double>(-5285289999999.3721, 0), sf::Vector2<double>(0, -810),sf::Vector2<double>(0,0), "1P/Halley", StellarBodyType::ASTEROID_ICE,&sun);
 
-    System system("SOL", sun, engine);
+    StellarSystem system("SOL", sun, engine);
     system.addStellarBody(&mercury);
     system.addStellarBody(&venus);
     system.addStellarBody(&earth);

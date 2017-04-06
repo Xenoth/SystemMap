@@ -6,34 +6,34 @@
 #include "StellarSystem.h"
 #include "Math4Orbits.h"
 
-System::System(const std::string name, const StellarBody main_body, Engine &engine) :
+StellarSystem::StellarSystem(const std::string name, const StellarBody main_body, Engine &engine) :
         name(name), main_body(main_body), engine(engine)
 {
     warp = 1;
 }
 
-void System::warp_x10()
+void StellarSystem::warp_x10()
 {
     if( warp < 100000 )
         warp = warp*10;
 }
 
-void System::warp_div10()
+void StellarSystem::warp_div10()
 {
     if( warp > 1 )
         warp = warp/10;
 }
 
-void System::warp_reset()
+void StellarSystem::warp_reset()
 {
     warp = 1;
 }
 
-const std::string &System::getName() const {
+const std::string &StellarSystem::getName() const {
     return name;
 }
 
-bool System::addStellarBody(StellarBody* body){
+bool StellarSystem::addStellarBody(StellarBody* body){
     if(body->getMass() < main_body.getMass()){
         bodies.push_back(body);
         return true;
@@ -41,7 +41,7 @@ bool System::addStellarBody(StellarBody* body){
     return false;
 }
 
-void System::update() {
+void StellarSystem::update() {
 
     for(size_t i = 0; i < bodies.size(); i++){
 
@@ -49,7 +49,7 @@ void System::update() {
     }
 }
 
-bool System::initGraphical()
+bool StellarSystem::initGraphical()
 {
     main_body.loadTexture(engine.textureManager.getRessource(stellarBodyType2String(main_body.getStellarBodyType())));
     for(size_t i=0; i < bodies.size(); i++){
@@ -57,7 +57,7 @@ bool System::initGraphical()
     }
 }
 
-void System::draw(sf::RenderWindow &window) {
+void StellarSystem::draw(sf::RenderWindow &window) {
     main_body.setSpritePosition(sf::Vector2f((700/2), (700/2)));
     main_body.draw(window);
 
@@ -70,7 +70,7 @@ void System::draw(sf::RenderWindow &window) {
     }
 }
 
-std::string System::stellarBodyType2String(StellarBodyType stellarBodyType) {
+std::string StellarSystem::stellarBodyType2String(StellarBodyType stellarBodyType) {
     switch (stellarBodyType){
         case 1 :
             return "STAR_O";

@@ -16,7 +16,7 @@ Orbit::Orbit(StellarBody* orbited, StellarBody* orbiting)
 void Orbit::_redefine_areolar_velocity_constant()
 {
     V = sqrt(orbiting->getVelocity().x*orbiting->getVelocity().x + orbiting->getVelocity().y*orbiting->getVelocity().y);
-    H = calculateDistance(orbited->getPosition(),orbiting->getPosition())*V;
+    H = calculateDistance(orbited->getPosition(),orbiting->getPosition())   *V;
     if(orbited->getPosition().x > orbiting->getPosition().x)
         reversed = 1;
     else

@@ -10,19 +10,19 @@
 #include "Manager.h"
 #include "EventManager.h"
 
-class System;
+class StellarSystem;
 
 class Engine {
 
     private:
         sf::RenderWindow* window;
-        System* system;
+        StellarSystem* system;
     public:
         Engine(sf::RenderWindow& window);
         ~Engine();
         bool initManagers();
         void initKeyMapping();
-        inline void setSystem(System& system){ this->system = &system; }
+        inline void setSystem(StellarSystem& system){ this->system = &system; }
 
         Manager<sf::Texture> textureManager;
         EventsManager* eventManager;
