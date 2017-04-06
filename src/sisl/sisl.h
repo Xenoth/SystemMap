@@ -1,6 +1,6 @@
 /*<===========================================================
 LIB  : SISL
-version : 2.0
+version : 2.5
 DEV : SOTON "Asphox" Dylan
 Date : 15/03/2017
 <================================================================*/
@@ -14,8 +14,8 @@ Date : 15/03/2017
 #ifndef SISL_H
 #define SISL_H
 
-#include <vector>
 #include <unordered_map>
+#include <map>
 #include <functional>
 #include <iostream>
 
@@ -25,21 +25,6 @@ Date : 15/03/2017
 #define SIGNAL(name,...) sisl::Signal<__VA_ARGS__> name = sisl::Signal<__VA_ARGS__>(this)
 #define EXT_SIGNAL(name,...) sisl::Signal<__VA_ARGS__> name = sisl::Signal<__VA_ARGS__>()
 
-
-namespace sisl
-{
-    template<typename ...Types>
-    class __ABS_SISL;
-
-    template<typename ...Types>
-    class Signal;
-
-    template<typename ...Types>
-    class Slot;
-
-}
-
-#include "sisl_abs.h"
 #include "sisl_slot.h"
 #include "sisl_signal.h"
 

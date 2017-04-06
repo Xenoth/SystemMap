@@ -17,6 +17,7 @@ class Engine {
     private:
         sf::RenderWindow* window;
         StellarSystem* system;
+        AUTO_SLOT(appClose,[=](){ this->window->close(); });
     public:
         Engine(sf::RenderWindow& window);
         ~Engine();

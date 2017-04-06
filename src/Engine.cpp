@@ -9,7 +9,6 @@ Engine::Engine(sf::RenderWindow& window)
 {
     this->window = &window;
     eventManager = new EventsManager(this->window);
-    AUTO_SLOT(appClose,[=](){ this->window->close(); });
     eventManager->Closed.connect(appClose);
 }
 
