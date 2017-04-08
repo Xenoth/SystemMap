@@ -33,7 +33,7 @@ class Orbit
         Orbit(StellarBody* orbited, StellarBody* orbiting);
         void setOrbitedBody(StellarBody* orbited);
         inline void setPrecision(unsigned short int precision = 100){ this->precision = precision; }
-        inline void setColor(sf::Color color = sf::Color(255,255,255)){ this->orbit_form.setOutlineColor(color); }
+        inline void setColor(sf::Color color = sf::Color(150,150,0)){ this->orbit_form.setOutlineColor(color); }
         inline void setThickness(unsigned short int thickness = 2){ this->orbit_form.setOutlineThickness(thickness); }
         inline void draw(sf::RenderWindow& window){ window.draw(orbit_form); }
         void update();

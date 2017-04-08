@@ -11,19 +11,15 @@ double calculateDistance(sf::Vector2<double> to, sf::Vector2<double> from) {
 
 double calculateAngle(sf::Vector2<double> orbitedBodyPos, sf::Vector2<double> orbitingBodyPos)
 {
-    std::cout << "orbitingBodyPos.x-orbitedBodyPos.x = " << orbitingBodyPos.x-orbitedBodyPos.x << std::endl;
     double r = std::acos((orbitingBodyPos.x-orbitedBodyPos.x)/calculateDistance(orbitedBodyPos, orbitingBodyPos));
 
     if(orbitingBodyPos.y < orbitedBodyPos.y)
         r = -r;
-    std::cout << "R = " << r << std::endl;
     return r;
 }
 
 sf::Vector2<double> calculateAccelerationForce(double orbitedBodyMass, double orbitingBodyMass, double distance, double angle) {
     double GField = (-G * orbitedBodyMass / std::pow(distance, 2));
-
-    std::cout << "\t\tGField = " << GField << std::endl;
 
     sf::Vector2<double> unitaireVector;
 

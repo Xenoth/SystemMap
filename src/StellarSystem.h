@@ -14,11 +14,13 @@
 class StellarSystem {
 
     public:
-        StellarSystem(const std::string name, const StellarBody main_body, Engine &engine);
+        StellarSystem(const std::string name, StellarBody *main_body, Engine &engine);
+        ~StellarSystem();
 
         const std::string &getName() const;
 
-        bool addStellarBody(StellarBody* body);
+        bool addStellarBody(StellarBody *body);
+        bool addSatellite(StellarBody *orbiting_body, StellarBody *satellite);
 
         void update();
 
@@ -34,9 +36,10 @@ private :
         unsigned int warp;
 
         std::string name;
-        StellarBody main_body;
+        StellarBody *main_body;
 
         std::vector<StellarBody*> bodies;
+        std::map<StellarBody*, std::vector<StellarBody*>> satellites;
         Engine engine;
 
         std::string stellarBodyType2String(StellarBodyType stellarBodyType);
