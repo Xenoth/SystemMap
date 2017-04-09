@@ -17,8 +17,6 @@ class GraphicalEntity {
         bool loadTexture(const sf::Texture *texture);
 
         void setSpritePosition(sf::Vector2f position);
-        void draw(sf::RenderWindow &window);
-        void drawOrbit(sf::RenderWindow &window){}
 
     protected:
         sf::Sprite sprite;

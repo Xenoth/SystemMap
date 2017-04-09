@@ -47,15 +47,3 @@ void PhysicEntity::setVelocity(const sf::Vector2<double> &velocity) {
 void PhysicEntity::setAcceleration(const sf::Vector2<double> &acceleration) {
     PhysicEntity::acceleration = acceleration;
 }
-
-bool PhysicEntity::OrbitCalculation(PhysicEntity &orbitingEntity, const double &T){
-    if(this->mass < orbitingEntity.getMass())
-        return false;
-
-    double angle = calculateAngle(this->position, orbitingEntity.getPosition());
-    double distance = calculateDistance(this->position, orbitingEntity.getPosition());
-
-    orbitingEntity.setAcceleration(calculateAccelerationForce(this->getMass(), orbitingEntity.getMass(), distance, angle));
-    orbitingEntity.setVelocity(accelerationOnVelocity(orbitingEntity.getAcceleration(),orbitingEntity.getVelocity(), T));
-    orbitingEntity.setPosition(velocityOnPosition(orbitingEntity.getVelocity(), orbitingEntity.getPosition(), T));
-}

@@ -25,7 +25,7 @@ class PhysicEntity {
     void setVelocity(const sf::Vector2<double> &velocity);
     void setAcceleration(const sf::Vector2<double> &acceleration);
 
-    bool OrbitCalculation(PhysicEntity &orbitingEntity, const double &T);
+    bool OrbitCalculation(const double &T);
 
 protected:
         double mass;

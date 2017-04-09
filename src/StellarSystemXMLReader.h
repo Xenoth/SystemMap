@@ -2,12 +2,13 @@
 // Created by Xenoth on 08/04/2017.
 //
 
+#ifndef SYSTEMMAP_STELLARSYSTEMXMLREADER_H
+#define SYSTEMMAP_STELLARSYSTEMXMLREADER_H
+
+#include "tinyxml2/tinyxml2.h"
 #include "StellarSystem.h"
 #include <iostream>
 #include <string>
-
-#ifndef SYSTEMMAP_STELLARSYSTEMXMLREADER_H
-#define SYSTEMMAP_STELLARSYSTEMXMLREADER_H
 
 class StellarSystemXMLReader {
 

@@ -18,13 +18,11 @@ class StellarSystem {
         ~StellarSystem();
 
         const std::string &getName() const;
-
-        bool addStellarBody(StellarBody *body);
-        bool addSatellite(StellarBody *orbiting_body, StellarBody *satellite);
+        StellarBody* getMainBody() const;
 
         void update();
 
-        bool initGraphical();
+        void initGraphics();
         void draw(sf::RenderWindow &window);
 
         void warp_x10();     SLOT(slot_warp_x10,StellarSystem,warp_x10);
@@ -38,11 +36,7 @@ private :
         std::string name;
         StellarBody *main_body;
 
-        std::vector<StellarBody*> bodies;
-        std::map<StellarBody*, std::vector<StellarBody*>> satellites;
         Engine engine;
-
-        std::string stellarBodyType2String(StellarBodyType stellarBodyType);
 };
 
 

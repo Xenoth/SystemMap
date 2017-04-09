@@ -16,7 +16,3 @@ bool GraphicalEntity::loadTexture(const sf::Texture *texture) {
 void GraphicalEntity::setSpritePosition(sf::Vector2f position){
     sprite.setPosition(position);
 }
-
-void GraphicalEntity::draw(sf::RenderWindow &window) {
-    window.draw(sprite);
-}

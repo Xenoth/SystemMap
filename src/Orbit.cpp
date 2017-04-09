@@ -46,11 +46,12 @@ void Orbit::update()
 
     if( Em > -(K*K)/(2*H*H) && Em < 0)   //if orbit is elliptic
     {
-        for(unsigned int i=0; i < 100; i++)
+        double r = 0;
+        for(unsigned int i=0; i < precision; i++)
         {
             angle = i*step;
-            double r = 1/( (K/(H*H)*(1+e*cos(angle))));
-            orbit_form.setPoint(i,convert_position_physic_to_graphic(sf::Vector2<double>(reversed*r*cos(angle),r*sin(angle))));
+            r = 1/( (K/(H*H)*(1+e*cos(angle))));
+            orbit_form.setPoint(i,convert_position_physic_to_graphic(sf::Vector2<double>(reversed*r*cos(angle)+orbited->getPosition().x,r*sin(angle)+orbited->getPosition().y)));
         }
     }
 }
