@@ -19,7 +19,7 @@
             <physic mass="5.9736e+24" radius="6356000" position="152097701000;0" velocity="0;-29291" acceleration="0;0" type="11"/>
             <graphic texture="" map_color="0;255;255"/>
             <satellites>
-                <satellite name="Luna">
+                <satellite name="Moon">
                     <physic mass="7.3477e+22" radius="1737000" position="405696000;0" velocity="0;-995" acceleration="0;0" type="13"/>
                     <graphic texture="" map_color="0;255;255"/>
                 </satellite>

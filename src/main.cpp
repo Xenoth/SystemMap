@@ -7,6 +7,13 @@
 
 using namespace std;
 
+function zoomInView(sf::View *view){
+    view->zoom(1f);
+}
+
+function zoomOutView(sf::View *vienw){
+    vienw->zoom(-1f);
+}
 
 int main(int argc, char* argv[]) {
 
@@ -14,6 +21,7 @@ int main(int argc, char* argv[]) {
     sf::RenderWindow app(sf::VideoMode(700, 700), "System Map");
     app.setFramerateLimit(60);
 
+    sf::View view = app.getDefaultView();
 
     Engine engine(app);
     engine.initManagers();
@@ -21,17 +29,11 @@ int main(int argc, char* argv[]) {
     StellarSystemXMLReader stellarSystemXMLReader(engine);
     StellarSystem system = stellarSystemXMLReader.generateStellarSystem();
 
-    StellarBody sun = StellarBody((1.99*std::pow(10.0, 30.0)), 695700000, sf::Vector2<double>(0,0), sf::Vector2<double>(0,0), sf::Vector2<double>(0,0),"Sol", StellarBodyType::STAR_O);
-
-    StellarBody venus = StellarBody((4.8685*std::pow(10,24)), 6051800, sf::Vector2<double>(108942109000, 0), sf::Vector2<double>(0, 34790),sf::Vector2<double>(0,0),"Venus", StellarBodyType::PLANET_GAZ,&sun);
-    StellarBody earth = StellarBody((5.9736*std::pow(10.0, 24.0)), 6356000, sf::Vector2<double>(152097701000, 0), sf::Vector2<double>(0, 29291),sf::Vector2<double>(0,0), "Earth", StellarBodyType::PLANET_EARTH_LIKE,&sun);
-    StellarBody mars = StellarBody((641.85*std::pow(10,21)), 3396200, sf::Vector2<double>(249228730000, 0), sf::Vector2<double>(0, 21972),sf::Vector2<double>(0,0), "Mars", StellarBodyType::PLANET_DEAD,&sun);
-
-    StellarBody halley = StellarBody((1000), 1000, sf::Vector2<double>(-5285289999999.3721, 0), sf::Vector2<double>(0, -810),sf::Vector2<double>(0,0), "1P/Halley", StellarBodyType::ASTEROID_ICE,&sun);
-
     engine.setSystem(system);
     engine.initKeyMapping();
     system.initGraphical();
+
+    engine.eventManager->MouseWheelScrolled.connect(sf::Vector2(zoomInView(&view), zoomOutView(&view)));
 
     while(app.isOpen())
     {
@@ -39,6 +41,7 @@ int main(int argc, char* argv[]) {
         app.clear(sf::Color(0, 0, 0,255));
         system.update();
         system.draw(app);
+        app.setView(view);
         app.display();
     }
 }
