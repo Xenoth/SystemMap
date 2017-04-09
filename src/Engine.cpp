@@ -5,6 +5,10 @@
 #include "Engine.h"
 #include "StellarSystem.h"
 
+const std::string Engine::RESSOURCES_PATH= "../ressources/";
+const std::string Engine::TEXTURES_LOD = "textures.lod";
+const std::string Engine::XMLS_LOD = "xmls.lod";
+
 Engine::Engine(sf::RenderWindow& window)
 {
     this->window = &window;
@@ -18,8 +22,11 @@ Engine::~Engine()
 }
 
 bool Engine::initManagers() {
-    if(!textureManager.loadRessources("../ressources/textures.lod"))
+    if(!textureManager.loadRessources(RESSOURCES_PATH+TEXTURES_LOD))
         return false;
+    if(!xmlManager.loadXMLFiles(RESSOURCES_PATH+XMLS_LOD)){
+        return false;
+    }
     return true;
 }
 

@@ -6,10 +6,25 @@
 #include "StellarSystem.h"
 #include "Math4Orbits.h"
 
-StellarSystem::StellarSystem(const std::string name, const StellarBody main_body, Engine &engine) :
+using namespace std;
+
+StellarSystem::StellarSystem(const std::string name, StellarBody *main_body, Engine &engine) :
         name(name), main_body(main_body), engine(engine)
 {
     warp = 1;
+}
+
+StellarSystem::~StellarSystem()
+{
+    delete(main_body);
+    for (StellarBody *current : bodies){
+        delete(current);
+    }
+    for(pair<StellarBody*, vector<StellarBody*>> current_pair: satellites){
+        for(StellarBody *currentSatellite : current_pair.second){
+            delete(currentSatellite);
+        }
+    }
 }
 
 void StellarSystem::warp_x10()
@@ -33,9 +48,24 @@ const std::string &StellarSystem::getName() const {
     return name;
 }
 
-bool StellarSystem::addStellarBody(StellarBody* body){
-    if(body->getMass() < main_body.getMass()){
+bool StellarSystem::addStellarBody(StellarBody *body){
+    if(body->getMass() < main_body->getMass()){
         bodies.push_back(body);
+        return true;
+    }
+    return false;
+}
+
+bool StellarSystem::addSatellite(StellarBody *orbiting_body, StellarBody *satellite) {
+    if(satellite->getMass() < orbiting_body->getMass()){
+        map<StellarBody*,vector<StellarBody*>>::iterator it;
+        it = satellites.find(orbiting_body);
+        if (it == satellites.end()){
+            satellites.insert({orbiting_body, vector<StellarBody*>()});
+            it = satellites.find(orbiting_body);
+        }
+        satellites.find(orbiting_body)->second.push_back(satellite);
+
         return true;
     }
     return false;
@@ -43,30 +73,41 @@ bool StellarSystem::addStellarBody(StellarBody* body){
 
 void StellarSystem::update() {
 
-    for(size_t i = 0; i < bodies.size(); i++){
+    for(StellarBody *current : bodies){
 
-        main_body.OrbitCalculation(*bodies.at(i), warp);
+        main_body->OrbitCalculation(*current, warp);
     }
 }
 
 bool StellarSystem::initGraphical()
 {
-    main_body.loadTexture(engine.textureManager.getRessource(stellarBodyType2String(main_body.getStellarBodyType())));
-    for(size_t i=0; i < bodies.size(); i++){
-        bodies.at(i)->loadTexture(engine.textureManager.getRessource(stellarBodyType2String(bodies.at(i)->getStellarBodyType())));
+    main_body->loadTexture(engine.textureManager.getRessource(stellarBodyType2String(main_body->getStellarBodyType())));
+    for(StellarBody *current : bodies){
+        current->loadTexture(engine.textureManager.getRessource(stellarBodyType2String(current->getStellarBodyType())));
     }
+    int count_satellite = 0;
+    for(pair<StellarBody*, vector<StellarBody*>> current_pair: satellites){
+        for(StellarBody *currentSatellite : current_pair.second){
+            currentSatellite->loadTexture(engine.textureManager.getRessource(stellarBodyType2String(currentSatellite->getStellarBodyType())));
+            count_satellite++;
+        }
+    }
+    cout << "StellarSystem::initGraphical :" << endl;
+    cout << "Main Body Initialized" << std::endl;
+    cout << bodies.size() << " bodie(s) initialized" << endl;
+    cout << count_satellite << " satellite(s) initialized" << endl;
 }
 
 void StellarSystem::draw(sf::RenderWindow &window) {
-    main_body.setSpritePosition(sf::Vector2f((700/2), (700/2)));
-    main_body.draw(window);
+    main_body->setSpritePosition(sf::Vector2f((700/2), (700/2)));
+    main_body->draw(window);
 
-    for(size_t i = 0; i < bodies.size(); i++)
+    for(StellarBody *current : bodies)
     {
-        sf::Vector2f positionOnScreen = convert_position_physic_to_graphic(bodies.at(i)->getPosition());
-        bodies.at(i)->setSpritePosition(positionOnScreen);
-        bodies.at(i)->draw(window);
-        bodies.at(i)->drawOrbit(window);
+        sf::Vector2f positionOnScreen = convert_position_physic_to_graphic(current->getPosition());
+        current->setSpritePosition(positionOnScreen);
+        current->draw(window);
+        current->drawOrbit(window);
     }
 }
 
@@ -103,3 +144,4 @@ std::string StellarSystem::stellarBodyType2String(StellarBodyType stellarBodyTyp
             return "DEFAULT";
     }
 }
+

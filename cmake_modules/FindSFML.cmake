@@ -71,7 +71,8 @@ set(FIND_SFML_PATHS
     /sw
     /opt/local
     /opt/csw
-    /opt)
+    /opt
+    C:\\SFML-2.4.2)
 
 # find the SFML include directory
 find_path(SFML_INCLUDE_DIR SFML/Config.hpp

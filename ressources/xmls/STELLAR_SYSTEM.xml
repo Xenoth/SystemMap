@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<stellar_system name="SOL">
+    <main_body name="Sun">
+        <physic mass="1.989e+30" radius="695700000" position="0;0" velocity="0;0" acceleration="0;0" type="1"/>
+        <graphic texture="none" map_color="0;255;255"/>
+    </main_body>
+
+    <planets>
+        <planet name="Mercury">
+            <physic mass="330.2e+21" radius="2439700" position="69817079000;0" velocity="0;-38860" acceleration="0;0" type="13"/>
+            <graphic texture="" map_color="0;255;255"/>
+        </planet>
+        <planet name="Venus">
+            <physic mass="4.8685e+24" radius="6051800" position="108942109000;0" velocity="0;-34790" acceleration="0;0" type="12"/>
+            <graphic texture="" map_color="0;255;255"/>
+        </planet>
+        <planet name="Earth">
+            <physic mass="5.9736e+24" radius="6356000" position="152097701000;0" velocity="0;-29291" acceleration="0;0" type="11"/>
+            <graphic texture="" map_color="0;255;255"/>
+            <satellites>
+                <satellite name="Luna">
+                    <physic mass="7.3477e+22" radius="1737000" position="405696000;0" velocity="0;-995" acceleration="0;0" type="13"/>
+                    <graphic texture="" map_color="0;255;255"/>
+                </satellite>
+            </satellites>
+        </planet>
+        <planet name="Mars">
+            <physic mass="641.85e+21" radius="3396200" position="249228730000;0" velocity="0;-21972" acceleration="0;0" type="14"/>
+            <graphic texture="" map_color="0;255;255"/>
+            <satellites>
+                <satellite name="Phobos">
+                    <physic mass="1.0659e+16" radius="11266.7" position="9376000;0" velocity="0;-2138" acceleration="0;0" type="13"/>
+                    <graphic texture="" map_color="0;255;255"/>
+                </satellite>
+                <satellite name="Deimos">
+                    <physic mass="1.4762e+15" radius="6200" position="23463200;0" velocity="0;-1351.3" acceleration="0;0" type="13"/>
+                    <graphic texture="" map_color="0;255;255"/>
+                </satellite>
+            </satellites>
+        </planet>
+
+        <planet name="1P/Halley">
+            <physic mass="1000" radius="1000" position="-5285289999999.3721;0" velocity="0;-810" acceleration="0;0" type="22"/>
+            <graphic texture="" map_color="0;255;255"/>
+        </planet>
+    </planets>
+</stellar_system>

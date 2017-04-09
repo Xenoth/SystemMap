@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 #include "Manager.h"
 #include "EventManager.h"
+#include "XMLManager.h"
 
 class StellarSystem;
 
@@ -19,6 +20,11 @@ class Engine {
         StellarSystem* system;
         AUTO_SLOT(appClose,[=](){ this->window->close(); });
     public:
+
+        static const std::string RESSOURCES_PATH;
+        static const std::string TEXTURES_LOD;
+        static const std::string XMLS_LOD;
+
         Engine(sf::RenderWindow& window);
         ~Engine();
         bool initManagers();
@@ -26,6 +32,7 @@ class Engine {
         inline void setSystem(StellarSystem& system){ this->system = &system; }
 
         Manager<sf::Texture> textureManager;
+        XMLManager xmlManager;
         EventsManager* eventManager;
 };
 

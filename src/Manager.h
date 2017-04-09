@@ -8,6 +8,7 @@
 #include <iosfwd>
 #include <map>
 #include <fstream>
+#include <iostream>
 
 template <typename T>
 class Manager {
@@ -30,11 +31,14 @@ class Manager {
                 std::string key = line.substr(0, line.find(";"));
                 line = line.substr(line.find_first_of(";") + 1);
 
-                if(!tmp->loadFromFile(line))
-                    continue;
-                ressources.insert({key, tmp});
-            }
 
+                if(!tmp->loadFromFile(line)) {
+                    std::cerr << "Was Unable to load the file " << key << " (" << line <<")" << std::endl;
+                    continue;
+                }
+                ressources.insert({key, tmp});
+                std::cout << "File " << key << " (" << line <<") loaded" << std::endl;
+            }
             return true;
         }
         inline T* getRessource(std::string ressource_name) { return ressources.find(ressource_name)->second; };
